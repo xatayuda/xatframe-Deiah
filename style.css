@@ -1,0 +1,95 @@
+* {
+    /* margin-top: 3.5rem;*/
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    background-color: black;
+    transition: background-color 0.5s ease;
+    overflow: hidden;
+    background-image: url('https://i.postimg.cc/T3XfBpBs/strellitas.gif');
+}
+
+#colorButton {
+    margin-top: 3.5rem;
+    background-image: url('https://i.postimg.cc/L6K4pTR9/image.png');
+    background-size: cover;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 15px 15px;
+    background-color: #00000000;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+}
+#colorButton:hover {
+    transform: scale(1.1);
+}
+#colorButton:active {
+    transform: scale(0.9);
+}
+
+/*LOGO Y TEXTO LADO IZQUIERDO*/
+
+.image-container {
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo1 {
+    margin-top: 18rem;
+    margin-left: 5rem;
+    width: 10rem;
+    height: 10rem;
+    animation: floatText 20s ease-in-out infinite;
+}
+
+.text-logo {
+    width: 25%;
+    margin-left: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    font-family:'Courier New', Courier, monospace;
+    font-style: oblique;
+    animation: floatText 13s ease-in-out infinite;
+}
+
+/*LOGO Y TEXTO LADO DERECHO*/
+
+.text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15rem;
+    margin-left: 1rem;
+    width: 10rem;
+    height: 10rem;
+    animation: floatText 20s ease-in-out infinite;color: white;
+}
+
+.text2-logo {
+    color: white;
+    font-size: 1.5rem;
+    font-family:'Courier New', Courier, monospace;
+    font-style: oblique;
+    animation: floatText 13s ease-in-out infinite;
+}
+
+
+@keyframes floatText {
+    0%, 100% {
+    transform: translateY(0px);
+    }
+    50% {
+    transform: translateY(-40px);
+    }
+}
