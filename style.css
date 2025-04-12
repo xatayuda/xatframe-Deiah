@@ -70,7 +70,7 @@ body {
     align-items: center;
     flex-direction: column;
     margin-top: 15rem;
-    margin-left: 1rem;
+    margin-left: 5rem;
     width: 10rem;
     height: 10rem;
     animation: floatText 20s ease-in-out infinite;color: white;
